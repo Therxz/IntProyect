@@ -1,9 +1,14 @@
 <html lang="en">
+
 <head>
- 
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <title>IntProyect</title>
+    <link rel="shortcut icon" href="/resources/favicon.ico" type="image/x-icon">
+
 </head>
+
 <body>
     <nav>
         <div class="logo">
@@ -26,11 +31,63 @@
                 <a href="/index.html">Inicio</a>
                 <a href="/index.html#Plans">Planes</a>
                 <a href="#top">Ultimo añadido</a>
-                <a href="#Home">Registrarse</a>
-                <a href="#Home">Iniciar Sesion</a>
+                <a href="#csign">Registrarse</a>
+                <a href="/log.html">Iniciar Sesion</a>
             </ul>
         </div>
     </nav>
 
+    <div class="contform">
+
+
+        <form id="login" class="login" action="">
+
+            <label for="email">Email</label>
+            <input type="email" name="email" placeholder="intproyect@ejemplo.com">
+            <label for="password">Contraseña</label>
+            <input type="password" name="password" placeholder="xxxxxx">
+            <input type="submit" value="Iniciar Sesion">
+            <a href="#csign">Registrarse</a>
+            <a href="#login">Olvide la Contraseña</a>
+
+        </form>
+    </div>
+
+    <div id="csign" class="contsign">
+        <form id="sign" class="sign" action="">
+            <label for="names">Nombre</label>
+            <input type="text" name="names" placeholder="NOMBRE Y APELLIDO">
+            <label for="age">Edad</label>
+            <input type="date" name="" id="">
+            <label for="email">Email</label>
+            <input type="email" name="email" placeholder="intproyect@ejemplo.com">
+            <label for="password">Contraseña</label>
+            <input type="password" name="password" placeholder="xxxxxx">
+            <label for="password">Repetir contraseña</label>
+            <input type="password" name="password" placeholder="xxxxxx">
+            <label for="selplan">Elije tu plan</label>
+            <select name="selplan">
+                <option value="PLAN1">PLAN1</option>
+                <option value="PLAN2">PLAN2</option>
+                <option value="PLAN3">PLAN3</option>
+                
+            </select>
+
+
+            <input type="submit" value="Registrarse">
+            <a href="#login">Ya tengo cuenta</a>
+
+
+        </form>
+    </div>
+
+
+
+    <footer>
+        <span>Desarrollado por Mati CV</span>
+
+
+    </footer>
 </body>
+
 </html>
