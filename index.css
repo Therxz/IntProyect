@@ -11,9 +11,10 @@
 
  }
 
+
  h2 {
      margin: 10px;
-     font-size: 3VW;
+     font-size: 1em;
  }
 
  .menu-button {
@@ -122,6 +123,7 @@
      width: 100%;
      max-height: 100%;
 
+
  }
 
  .card img {
@@ -142,7 +144,7 @@
      border-radius: 20px;
      border-color: #ffb700;
      color: #ffb700;
-     font-size: 2.3vw;
+     font-size: 0.5em;
      min-width: 7vw;
 
  }
@@ -157,9 +159,13 @@
      border-radius: 20px;
      border-color: #ffb700;
      color: #ffb700;
-     font-size: 2.3vw;
+     font-size: 0.5em;
      min-width: 7vw;
 
+ }
+
+ .cplan h3{
+    font-size: 1em;
  }
 
  .topadd {
@@ -177,11 +183,11 @@
      display: flex;
      justify-content: space-around;
      box-sizing: border-box;
-     height: 50vw;
-     margin-bottom: 5px;
-     margin-top: 1em;
+     height: fit-content;
+     margin-block: 1em;
      align-items: center;
  }
+
 
  .cplan {
      display: flex;
@@ -189,9 +195,11 @@
      align-items: center;
      box-sizing: border-box;
      height: fit-content;
+
+     max-width: 25em;
      width: 30%;
      border-style: solid;
-     border-color: #box-shadow: -2px -2px 20px -8px rgba(255, 183, 0, 0.93);
+     border-color: -2px -2px 20px -8px rgba(255, 183, 0, 0.93);
      -webkit-box-shadow: -2px -2px 20px -8px rgba(255, 183, 0, 0.93);
      -moz-box-shadow: -2px -2px 20px -8px rgba(255, 183, 0, 0.93);
      ;
@@ -206,7 +214,7 @@
  }
 
  .infplan {
-     font-size: 1.8vw;
+     font-size: 0.8em;
      text-indent: -2vw;
  }
 
@@ -223,6 +231,7 @@
  }
 
  .contact {
+     margin-top: 5em;
      display: flex;
      justify-content: center;
      width: 100%;
@@ -283,6 +292,22 @@
 
  }
 
+ .login a {
+
+     text-align: center;
+     text-decoration: none;
+     border-style: solid;
+     padding: 0.5em;
+     margin: 2px;
+     border-radius: 20px;
+     border-color: #ffb700;
+     color: #ffb700;
+     font-size: 0.5em;
+
+
+
+ }
+
  .contform {
      margin: 0;
      height: 100%;
@@ -305,7 +330,7 @@
      align-items: center;
      justify-content: center;
      background-color: black;
-     
+
  }
 
  .sign {
@@ -317,4 +342,164 @@
      min-width: 10em;
      max-width: 15em;
      box-sizing: border-box;
+ }
+
+ .signbtn {
+     text-align: center;
+     text-decoration: none;
+     border-style: solid;
+     padding: 0.5em;
+     margin: 2px;
+     border-radius: 20px;
+     border-color: #ffb700;
+     color: #ffb700;
+     font-size: 0.5em;
+     background: none;
+ }
+
+ .sign a {
+     text-align: center;
+     text-decoration: none;
+     border-style: solid;
+     padding: 0.5em;
+     margin: 2px;
+     border-radius: 20px;
+     border-color: #ffb700;
+     color: #ffb700;
+     font-size: 0.5em;
+
+ }
+
+ @media (max-width:320px) {
+     body {
+         min-width: 318px;
+         min-height: 651px;
+
+     }
+ }
+
+
+
+ @media (min-width:760px) {
+
+     .plans {
+         margin-block: 2em;
+         margin-block: 5em;
+     }
+
+     .contact {
+         margin-top: 0;
+     }
+
+     .cplan {
+         padding: 1.5em;
+
+     }
+
+     .topadd {
+         font-size: 1.5em;
+
+     }
+
+     .cplan a {
+         font-size: 1em;
+
+     }
+
+     .cplan p {
+         font-size: 1.5em;
+     }
+
+     .cplan h3{
+        font-size: 1.3em;
+     }
+
+     .menu-button span {
+         display: none;
+     }
+
+     .menu {
+         padding-left: 4em;
+         display: flex;
+         width: 56%;
+         height: fit-content;
+     }
+
+     .notad {
+         display: none;
+
+
+     }
+
+     .toggle {
+         height: fit-content;
+         width: 100%;
+         background: none;
+         display: flex;
+         position: relative;
+         gap: 2em;
+         justify-content: flex-end;
+
+     }
+
+     .toggle a {
+         text-decoration: none;
+         list-style: none;
+         display: flex;
+         padding: 10px 0;
+         color: #fafafa;
+         font-weight: bold;
+         font-size: 1em;
+
+     }
+
+
+     @media (min-width:1500px) {
+        .topadd {
+            font-size: 2.5em;
+   
+        }
+         .topadd a {
+             font-size: 1em;
+         }
+
+
+         .cplan {
+             font-size: 1.5em;
+         }
+
+         .cplan h3 {
+             font-size: 3em;
+         }
+
+         .contact {
+             font-size: 2em;
+
+         }
+
+         .map {
+             position: relative;
+             display: flex;
+             justify-content: right;
+         }
+
+         .map iframe {
+             width: 80%;
+         }
+
+         nav {
+             font-size: 2em;
+         }
+
+         nav span {
+             font-size: 2em;
+
+
+         }
+
+
+
+     }
+
+
  }
