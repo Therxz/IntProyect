@@ -9,6 +9,7 @@
 
 
 
+
  }
 
 
@@ -164,8 +165,8 @@
 
  }
 
- .cplan h3{
-    font-size: 1em;
+ .cplan h3 {
+     font-size: 1em;
  }
 
  .topadd {
@@ -195,7 +196,7 @@
      align-items: center;
      box-sizing: border-box;
      height: fit-content;
-
+     border-radius: 30px;
      max-width: 25em;
      width: 30%;
      border-style: solid;
@@ -294,19 +295,29 @@
 
  .login a {
 
-     text-align: center;
+     text-align: left;
      text-decoration: none;
-     border-style: solid;
      padding: 0.5em;
      margin: 2px;
-     border-radius: 20px;
-     border-color: #ffb700;
+   
      color: #ffb700;
-     font-size: 0.5em;
+     font-size: 0.7em;
 
 
 
  }
+ .loginbtn  {
+    text-align: center;
+    text-decoration: none;
+    border-style: solid;
+    padding: 0.5em;
+    margin: 2px;
+    border-radius: 20px;
+    border-color: #ffb700;
+    color: #ffb700;
+    font-size: 0.7em;
+    background: none;
+}
 
  .contform {
      margin: 0;
@@ -326,7 +337,7 @@
      position: absolute;
      display: flex;
      height: 100vh;
-     width: 100vw;
+     width: 100%;
      align-items: center;
      justify-content: center;
      background-color: black;
@@ -353,20 +364,42 @@
      border-radius: 20px;
      border-color: #ffb700;
      color: #ffb700;
-     font-size: 0.5em;
+     font-size: 0,7em;
      background: none;
  }
 
  .sign a {
-     text-align: center;
+     text-align: left;
      text-decoration: none;
-     border-style: solid;
-     padding: 0.5em;
+     padding: 0.7em;
      margin: 2px;
      border-radius: 20px;
      border-color: #ffb700;
      color: #ffb700;
-     font-size: 0.5em;
+     font-size: 0.7em;
+
+ }
+
+ .cplan a:hover {
+     background-color: #fcb500;
+     color: black;
+     border-color: white;
+     cursor: pointer;
+
+ }
+
+ .topadd a:hover {
+     background-color: #fcb500;
+     color: black;
+     border-color: white;
+     cursor: pointer;
+
+ }
+
+ .toggle a:hover {
+
+     cursor: pointer;
+     color: #fcb500;
 
  }
 
@@ -410,8 +443,8 @@
          font-size: 1.5em;
      }
 
-     .cplan h3{
-        font-size: 1.3em;
+     .cplan h3 {
+         font-size: 1.3em;
      }
 
      .menu-button span {
@@ -454,11 +487,12 @@
      }
 
 
-     @media (min-width:1500px) {
-        .topadd {
-            font-size: 2.5em;
-   
-        }
+     @media (min-width:1600px) {
+         .topadd {
+             font-size: 2.5em;
+
+         }
+
          .topadd a {
              font-size: 1em;
          }
@@ -469,7 +503,11 @@
          }
 
          .cplan h3 {
-             font-size: 3em;
+             font-size: 1.5em;
+         }
+
+         .plans {
+             max-height: 80%;
          }
 
          .contact {
@@ -488,11 +526,11 @@
          }
 
          nav {
-             font-size: 2em;
+             font-size: 1em;
          }
 
          nav span {
-             font-size: 2em;
+             font-size: 1em;
 
 
          }

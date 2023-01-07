@@ -13,6 +13,7 @@
     <nav>
         <div class="logo">
             <a title="logo" href="/index.html#Home"><img src="/resources/favicon.png" alt="Logo" /></a>
+
             <span>IntProyect</span>
         </div>
 
@@ -28,11 +29,14 @@
             </label>
             <input class="menu-toggle" type="checkbox" id="menu-toggle">
             <ul class="toggle">
-                <a href="/index.html">Inicio</a>
+                <a href="/index.html#Home">Inicio</a>
                 <a href="/index.html#Plans">Planes</a>
-                <a href="#top">Ultimo añadido</a>
-                <a href="#csign">Registrarse</a>
+                <div class="notad">
+                    <a href="/index.html#Topa">Ultimo añadido</a>
+                </div>
                 <a href="/log.html">Iniciar Sesion</a>
+                <a href="/log.html#csign">Registrarse</a>
+
             </ul>
         </div>
     </nav>
@@ -46,7 +50,7 @@
             <input type="email" name="email" placeholder="intproyect@ejemplo.com">
             <label for="password">Contraseña</label>
             <input type="password" name="password" placeholder="xxxxxx">
-            <input type="submit" value="Iniciar Sesion">
+            <input class="loginbtn" type="submit" value="Iniciar Sesion">
             <a href="#csign">Registrarse</a>
             <a href="#login">Olvide la Contraseña</a>
 
