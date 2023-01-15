@@ -9,9 +9,7 @@
 
 
 
-
  }
-
 
  h2 {
      margin: 10px;
@@ -114,7 +112,12 @@
      justify-content: space-between;
      width: 100%;
      align-items: center;
+     padding-bottom: 10px;
+
+
  }
+
+
 
  .card {
      display: flex;
@@ -145,7 +148,7 @@
      border-radius: 20px;
      border-color: #ffb700;
      color: #ffb700;
-     font-size: 0.5em;
+     font-size: 0.7em;
      min-width: 7vw;
 
  }
@@ -160,7 +163,7 @@
      border-radius: 20px;
      border-color: #ffb700;
      color: #ffb700;
-     font-size: 0.5em;
+     font-size: 0.7em;
      min-width: 7vw;
 
  }
@@ -182,11 +185,45 @@
  .plans {
 
      display: flex;
-     justify-content: space-around;
+     justify-content: center;
+
+ }
+
+ .contplans {
+     display: flex;
      box-sizing: border-box;
      height: fit-content;
      margin-block: 1em;
      align-items: center;
+     overflow: auto;
+     padding-bottom: 10px;
+
+ }
+
+ .contplans::-webkit-scrollbar {
+
+     height: 0.2em;
+     background-color: #1717172c;
+
+
+ }
+
+ .contplans::-webkit-scrollbar-thumb {
+     background-color: rgba(77, 77, 77, 0.268);
+
+ }
+
+
+ .contcards::-webkit-scrollbar {
+
+     height: 0.2em;
+     background-color: #1717172c;
+
+
+ }
+
+ .contcards::-webkit-scrollbar-thumb {
+     background-color: rgba(77, 77, 77, 0.268);
  }
 
 
@@ -197,7 +234,6 @@
      box-sizing: border-box;
      height: fit-content;
      border-radius: 30px;
-     max-width: 25em;
      width: 30%;
      border-style: solid;
      border-color: -2px -2px 20px -8px rgba(255, 183, 0, 0.93);
@@ -205,6 +241,8 @@
      -moz-box-shadow: -2px -2px 20px -8px rgba(255, 183, 0, 0.93);
      ;
      padding: 10px;
+     margin-inline: 1vw;
+     min-width: 230px;
 
 
  }
@@ -240,6 +278,7 @@
      padding-inline: 1em;
      box-sizing: border-box;
      height: fit-content;
+     gap: 1vw;
  }
 
  .inf {
@@ -267,20 +306,17 @@
  .map {
      display: flex;
      justify-content: center;
-     margin-right: 5px;
      padding-bottom: 0;
      width: 45%;
      box-sizing: border-box;
      overflow: hidden;
  }
 
- .gm-style .place-card div,
- .gm-style .place-card a,
- .gm-style .default-card div,
- .gm-style .default-card a {
-     display: none;
-     /*Para quitar el card del map */
+ .map iframe {
+     min-width: 300px;
+     width: 80%;
  }
+
 
  .login {
      display: flex;
@@ -299,25 +335,26 @@
      text-decoration: none;
      padding: 0.5em;
      margin: 2px;
-   
+
      color: #ffb700;
      font-size: 0.7em;
 
 
 
  }
- .loginbtn  {
-    text-align: center;
-    text-decoration: none;
-    border-style: solid;
-    padding: 0.5em;
-    margin: 2px;
-    border-radius: 20px;
-    border-color: #ffb700;
-    color: #ffb700;
-    font-size: 0.7em;
-    background: none;
-}
+
+ .loginbtn {
+     text-align: center;
+     text-decoration: none;
+     border-style: solid;
+     padding: 0.5em;
+     margin: 2px;
+     border-radius: 20px;
+     border-color: #ffb700;
+     color: #ffb700;
+     font-size: 0.7em;
+     background: none;
+ }
 
  .contform {
      margin: 0;
@@ -364,7 +401,7 @@
      border-radius: 20px;
      border-color: #ffb700;
      color: #ffb700;
-     font-size: 0,7em;
+     font-size: 0, 7em;
      background: none;
  }
 
@@ -403,12 +440,41 @@
 
  }
 
- @media (max-width:320px) {
+ @media (max-width:600px) {
      body {
          min-width: 318px;
          min-height: 651px;
 
      }
+
+
+     .cplan {
+
+         margin-bottom: 1em;
+
+     }
+
+     .contcards {
+         overflow: auto;
+
+     }
+
+     .card {
+         min-width: 65%;
+     }
+
+     .contact {
+         flex-direction: column;
+     }
+
+     .map {
+         width: 100%;
+     }
+
+     .map iframe {
+         width: 80%;
+     }
+
  }
 
 
@@ -418,6 +484,7 @@
      .plans {
          margin-block: 2em;
          margin-block: 5em;
+
      }
 
      .contact {
@@ -489,29 +556,31 @@
 
      @media (min-width:1600px) {
          .topadd {
-             font-size: 2.5em;
+             font-size: 2vw;
 
          }
 
          .topadd a {
-             font-size: 1em;
+             font-size: 0.7vw;
          }
 
 
          .cplan {
-             font-size: 1.5em;
+             font-size: 0.7vw;
+             min-width: 25%;
+             width: 20vw;
+
          }
 
          .cplan h3 {
              font-size: 1.5em;
          }
 
-         .plans {
-             max-height: 80%;
-         }
+
 
          .contact {
-             font-size: 2em;
+             font-size: 1vw;
+             overflow: hidden;
 
          }
 
@@ -519,14 +588,19 @@
              position: relative;
              display: flex;
              justify-content: right;
+             max-width: 45%;
+             overflow: hidden;
          }
 
          .map iframe {
              width: 80%;
+
+
+
          }
 
          nav {
-             font-size: 1em;
+             font-size: 1vw;
          }
 
          nav span {
@@ -535,9 +609,20 @@
 
          }
 
+         .logo {
+             font-size: 1vw;
+         }
 
+         .logo img {
+             height: 3vw;
+             width: auto;
+         }
 
      }
 
 
+ }
+
+ html {
+     scroll-behavior: smooth;
  }
