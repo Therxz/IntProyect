@@ -453,6 +453,90 @@
 
  }
 
+ .galery {
+     display: flex;
+     justify-content: center;
+     flex-direction: column-reverse;
+     font-size: 2vw;
+     min-width: 230px;
+     gap: 1em;
+     padding-bottom: 2em;
+
+ }
+
+ .galery a img {
+     width: 10vw;
+ }
+
+ .imgcontt {
+     display: flex;
+     justify-content: center;
+
+ }
+
+ .sinops1 {
+     display: flex;
+     width: 100vw;
+     padding: 0.5em;
+     justify-content: center;
+     height: 30vh;
+
+ }
+
+
+ .sinops {
+     display: none;
+     width: 100vw;
+     padding: 0.5em;
+     justify-content: center;
+     height: 30vh;
+ }
+
+
+ .sin {
+     margin: 1em;
+     height: 100%;
+     max-width: 30vw;
+     overflow: scroll;
+     cursor: pointer;
+
+ }
+
+
+ .sinops:target {
+
+    display: flex;
+}
+
+
+
+.sinops:target~.sinops1 {
+     display: none;
+ }
+
+ .sin::-webkit-scrollbar {
+
+     width: 0.2em;
+     background-color: #1717172c;
+
+
+ }
+
+ .sin::-webkit-scrollbar-thumb {
+     background-color: rgba(77, 77, 77, 0.268);
+
+ }
+
+ .sin::-webkit-scrollbar-corner {
+     background-color: black;
+ }
+
+
+
+
+
+
+
  @media (max-width:600px) {
      body {
          min-width: 318px;
@@ -498,6 +582,32 @@
          flex-direction: column;
      }
 
+     .sinops {
+         flex-direction: column;
+         height: fit-content;
+         justify-content: center;
+         align-items: center;
+     }
+
+     .sinops img {
+         max-width: 200px;
+     }
+
+     .sinops1 {
+        flex-direction: column;
+        height: fit-content;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .sinops1 img {
+        max-width: 200px;
+    }
+
+     .sin {
+         max-width: 60vw;
+     }
+
  }
 
 
@@ -522,6 +632,10 @@
      .topadd {
          font-size: 1.5em;
 
+     }
+
+     .galery {
+         font-size: 1.5em;
      }
 
      .cplan a {
@@ -581,6 +695,10 @@
          .topadd {
              font-size: 2vw;
 
+         }
+
+         .galery {
+             font-size: 2vw;
          }
 
          .topadd a {
